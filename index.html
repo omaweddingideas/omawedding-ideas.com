@@ -1,0 +1,191 @@
+<!--
+Portfolio Website Adapted by Carlos A. Blanco
+GitHub: @carloswhite
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OMAWeddingIdeas</title>
+
+    <meta name="description" content="Company/Magazine based in Central Floirda">
+    <meta name="author" content="@carloswhite">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!--  Google Analytics
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146770707-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-146770707-1');
+    </script>
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body>
+
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">OMAWeddingIdeas</td>
+                <td id="navigation">
+                    <a href="#work">our past issues</a>
+                    <a href="#bio">about</a>
+                    <a href="#contact">contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>A magazine made with &#128156 in the Orlando Metropolitan Area.</h1>
+                <table>
+                    <p>Coming soon this Winter 2019. Contact us to get it delivered at your doorstep!</p>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+
+    <div id="bio">
+        <h1>about</h1>
+        <p>
+            We are a 5.25” x 8.25” magazine directory called OMA Wedding Ideas. It’s monthly printed, with a beautiful
+            glossy paper, high quality ink and full color ads. Our mag is free to our targeted readers, and it has a
+            small cost but great value to our advertisers. We distribute 7,500 to 10,000 mags all over the Orlando
+            Metropolitan Area, at industry businesses, high traffic places, bridal shows, and at our brides doorsteps!
+            Our Online circulation, however, is unlimited in quantity and reach. Our readers pick our mags with a
+            purpose! They need to plan their wedding or someone else’s wedding locally, and we bring the wedding pros in
+            the area to them. There are no distractions here, our main focus is on the advertisers and the amazing
+            products and services they offer! We are a true resourceful guide to YOU.
+        </p>
+
+        <p>Made with love</p>
+
+        <p>
+            Kamila Blanco & Carlos Blanco.
+        </p>
+        <p>OMA Wedding Ideas, Publishers</p>
+        <p>(407) 912-7045</p>
+        <p>omaweddingideas@gmail.com</p>
+
+
+    </div>
+    <div id="work">
+        <h3>Our sister mags</h3>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))"
+                src="https://i0.wp.com/nwaweddingideas.com/wp-content/uploads/2017/03/NWAWI-January-2017-Issuu_Page_01.jpg?w=1080">
+            <img onclick="magnify($(this).attr('src'))"
+                src="https://image.isu.pub/190703111828-bc3192575b3bcdcc1775cb7ec17cefa5/jpg/page_1.jpg">
+            <img onclick="magnify($(this).attr('src'))"
+                src="https://image.isu.pub/190502014833-ac4ce3f44988c206b6ba24759a08635f/jpg/page_1.jpg">
+            <img onclick="magnify($(this).attr('src'))"
+                src="https://image.isu.pub/180506202147-59d7f0545cbec860631b3fd8f31e84ab/jpg/page_1.jpg">
+            <img onclick="magnify($(this).attr('src'))"
+                src="https://image.isu.pub/190102212713-fceafb0bb770cd8a49ac19bf49586b71/jpg/page_1.jpg">
+            <img onclick="magnify($(this).attr('src'))"
+                src="https://image.isu.pub/170904184909-3ae69e6ab93dff875fe3a58fa5e0408f/jpg/page_1.jpg">
+        </div>
+    </div>
+    <div id="contact">
+        <h1>contact</h1>
+        <table>
+            <tr>
+                <td>
+                    <div id="inner_div">
+                        <table id="inner_table">
+                            <tr>
+                                <td><i class="fas fa-phone"></i> &nbsp; +1 (407) 912 7045</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-at"></i> &nbsp; omaweddingideas@gmail.com</td>
+                            </tr>
+
+                            <tr>
+                                <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Central Florida<br>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="social"><i class="fab fa-instagram"></i> <a
+                                            href="https://instagram.com/omaweddingideas">instagram.com/omaweddingideas</a></a>
+                                    <a class="social"><i class="fab fa-facebook"></i> <a
+                                            href="https://www.facebook.com/OMA-Wedding-Ideas-102732537764176/">facebook.com/OMA-Wedding-Ideas</a></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <form action="POST" data-netlify="true">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your best email" required><br>
+                        <textarea name="your message"
+                            placeholder="Your message + mailing address to get magazine delivered" required
+                            rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                        <div class="field">
+                            <div data-netlify-recaptcha="true"> </div>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        Made with &#128156 by <br> <a href="https://github.com/carloswhite">@carloswhite</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
